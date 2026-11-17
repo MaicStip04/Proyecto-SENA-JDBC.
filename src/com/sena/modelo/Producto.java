@@ -1,0 +1,36 @@
+package com.sena.modelo;
+
+public class Producto {
+    private int idProducto;
+    private String nombreProducto;
+    private double precio;
+    private int stock;
+
+    // Constructor vacío
+    public Producto() {}
+
+    // Constructor con parámetros
+    public Producto(String nombreProducto, double precio, int stock) {
+        this.nombreProducto = nombreProducto;
+        this.precio = precio;
+        this.stock = stock;
+    }
+
+    // Getters y Setters
+    public int getIdProducto() { return idProducto; }
+    public void setIdProducto(int idProducto) { this.idProducto = idProducto; }
+
+    public String getNombreProducto() { return nombreProducto; }
+    public void setNombreProducto(String nombreProducto) { this.nombreProducto = nombreProducto; }
+
+    public double getPrecio() { return precio; }
+    public void setPrecio(double precio) { this.precio = precio; }
+
+    public int getStock() { return stock; }
+    public void setStock(int stock) { this.stock = stock; }
+
+    @Override
+    public String toString() {
+        return "Producto [ID=" + idProducto + ", Nombre=" + nombreProducto + ", Precio=" + precio + ", Stock=" + stock + "]";
+    }
+}
